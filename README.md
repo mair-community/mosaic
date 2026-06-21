@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>Moroccan Open Source AI Catalog</strong><br>
-  A curated catalog of open-source AI projects built by Moroccans, in Morocco, or for Moroccan problems.
+  A curated catalog of open-source AI research artifacts built by Moroccans, in Morocco, and for Morocco.
 </p>
 
 <p align="center">
@@ -21,15 +21,15 @@
   <img src="https://img.shields.io/badge/Status-Active-success" alt="Status: Active">
 </p>
 
-It is a curated, community-friendly catalog of open-source AI software connected to Morocco. It highlights libraries, datasets, models, tools, platforms, and other artifacts built by Moroccans, developed in Morocco, or designed for Moroccan problems and communities. MOSAIC is part of the MAIR ecosystem and aims to make Moroccan AI work easier to discover, reuse, and understand.
+It is a curated, community-friendly catalog of open-source AI research artifacts connected to Morocco. It highlights libraries, datasets, models, tools, platforms, and other artifacts built by Moroccans, developed in Morocco, or designed for Moroccan problems and communities. MOSAIC is part of the MAIR ecosystem and aims to make Moroccan AI work easier to discover, reuse, and understand.
 
 ## Why this exists
 
 Moroccan AI work is often scattered across personal GitHub accounts, labs, startups, universities, Hugging Face pages, and research artifacts.
 
 MOSAIC helps:
-- showcase Moroccan open-source AI
-- make useful projects easier to discover and reuse
+- showcase Moroccan open-source AI research
+- make useful research projects easier to discover and reuse
 - connect builders, researchers, students, and institutions
 - highlight tools solving Moroccan and regional problems
 - create a clean dataset for reporting and ecosystem analysis
