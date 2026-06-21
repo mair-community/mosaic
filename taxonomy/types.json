@@ -1,0 +1,77 @@
+[
+  {
+    "id": "library",
+    "name": "Library",
+    "description": "Reusable software package or SDK."
+  },
+  {
+    "id": "framework",
+    "name": "Framework",
+    "description": "Structured framework for building systems or experiments."
+  },
+  {
+    "id": "tool",
+    "name": "Tool",
+    "description": "Focused utility or standalone tool."
+  },
+  {
+    "id": "toolkit",
+    "name": "Toolkit",
+    "description": "Bundle of utilities, scripts, and helper tools."
+  },
+  {
+    "id": "dataset",
+    "name": "Dataset",
+    "description": "Published dataset or corpus."
+  },
+  {
+    "id": "model",
+    "name": "Model",
+    "description": "Published model artifact or model repository."
+  },
+  {
+    "id": "benchmark",
+    "name": "Benchmark",
+    "description": "Evaluation suite, leaderboard, or benchmark resource."
+  },
+  {
+    "id": "workflow",
+    "name": "Workflow",
+    "description": "Pipeline, workflow, or reproducible process."
+  },
+  {
+    "id": "api",
+    "name": "API",
+    "description": "Programmatic interface or developer endpoint."
+  },
+  {
+    "id": "service",
+    "name": "Service",
+    "description": "Hosted or service-like software offering."
+  },
+  {
+    "id": "web-app",
+    "name": "Web App",
+    "description": "Interactive application accessed through the web."
+  },
+  {
+    "id": "application",
+    "name": "Application",
+    "description": "End-user application outside a web-only context."
+  },
+  {
+    "id": "plugin",
+    "name": "Plugin",
+    "description": "Extension or integration for another system."
+  },
+  {
+    "id": "documentation",
+    "name": "Documentation",
+    "description": "Documentation-first resource, guide, or reference artifact."
+  },
+  {
+    "id": "template",
+    "name": "Template",
+    "description": "Starter kit, scaffold, or reusable project template."
+  }
+]

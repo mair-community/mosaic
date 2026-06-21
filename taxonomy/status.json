@@ -1,0 +1,27 @@
+[
+  {
+    "id": "active",
+    "name": "Active",
+    "description": "Actively maintained and developed."
+  },
+  {
+    "id": "experimental",
+    "name": "Experimental",
+    "description": "Still changing quickly or under evaluation."
+  },
+  {
+    "id": "maintenance",
+    "name": "Maintenance",
+    "description": "Stable with limited ongoing changes and mostly fixes."
+  },
+  {
+    "id": "inactive",
+    "name": "Inactive",
+    "description": "Public but not currently maintained."
+  },
+  {
+    "id": "archived",
+    "name": "Archived",
+    "description": "Formally archived and no longer developed."
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "name": "PALM",
+    "description": "PALM is a culturally inclusive instruction-tuning and evaluation dataset for Arabic large language models. It matters because it strengthens Arabic NLP research relevant to Morocco and the wider region.",
+    "url": [
+      "https://github.com/UBC-NLP/palm"
+    ],
+    "platform": [
+      "github"
+    ],
+    "type": [
+      "dataset",
+      "benchmark"
+    ],
+    "domain": [
+      "language-culture-heritage"
+    ],
+    "tags": [
+      "arabic-nlp",
+      "llm",
+      "instruction-tuning",
+      "evaluation"
+    ],
+    "affiliations": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "sub_affiliations": [
+      "College of Computing"
+    ],
+    "language": [
+      "Python"
+    ],
+    "license": "CC-BY-NC-ND-4.0",
+    "doi": "10.18653/v1/2025.acl-long.1579",
+    "maturity": "research",
+    "status": "active",
+    "created_at": "2025-10-24"
+  },
+  {
+    "name": "ClimateFiller",
+    "description": "ClimateFiller is a Python framework for climate time-series quality control and gap filling. It matters because reliable climate data pipelines are important for Moroccan and African environmental analytics.",
+    "url": [
+      "https://github.com/elhachimi-ch/climatefiller"
+    ],
+    "platform": [
+      "github"
+    ],
+    "type": [
+      "library",
+      "framework"
+    ],
+    "domain": [
+      "climate-environment-water"
+    ],
+    "tags": [
+      "climate-data",
+      "gap-filling",
+      "time-series",
+      "machine-learning"
+    ],
+    "affiliations": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "sub_affiliations": [
+      "Center for Remote Sensing Applications",
+      "International Water Research Institute"
+    ],
+    "language": [
+      "Python"
+    ],
+    "license": "MIT",
+    "doi": "10.1016/j.simpa.2023.100575",
+    "maturity": "research",
+    "status": "active",
+    "created_at": "2023-09-09"
+  },
+  {
+    "name": "Casablanca",
+    "description": "Casablanca is a multidialectal Arabic speech dataset and model suite for automatic speech recognition research. It matters because dialectal Arabic speech resources help improve language AI for Morocco and the broader region.",
+    "url": [
+      "https://huggingface.co/datasets/UBC-NLP/Casablanca"
+    ],
+    "platform": [
+      "huggingface"
+    ],
+    "type": [
+      "dataset"
+    ],
+    "domain": [
+      "language-culture-heritage"
+    ],
+    "tags": [
+      "arabic-speech",
+      "speech-recognition",
+      "dialectal-arabic",
+      "code-switching"
+    ],
+    "affiliations": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "sub_affiliations": [
+      "College of Computing"
+    ],
+    "language": [],
+    "license": "CC-BY-NC-ND-4.0",
+    "doi": "10.48550/arXiv.2410.04527",
+    "maturity": "research",
+    "status": "active",
+    "created_at": "2024-10-06"
+  },
+  {
+    "name": "Atlas-Chat",
+    "description": "Atlas-Chat is a family of large language models adapted for Moroccan Arabic Darija. It matters because open local-language models improve representation and access for Moroccan users and researchers.",
+    "url": [
+      "https://huggingface.co/MBZUAI-Paris/Atlas-Chat-9B"
+    ],
+    "platform": [
+      "huggingface"
+    ],
+    "type": [
+      "model"
+    ],
+    "domain": [
+      "language-culture-heritage"
+    ],
+    "tags": [
+      "darija",
+      "moroccan-arabic",
+      "llm",
+      "instruction-tuning"
+    ],
+    "affiliations": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "sub_affiliations": [
+      "School of Industrial Management"
+    ],
+    "language": [
+      "Python"
+    ],
+    "license": null,
+    "doi": "10.48550/arXiv.2409.17912",
+    "maturity": "research",
+    "status": "active",
+    "created_at": "2024-09-13"
+  },
+  {
+    "name": "MegaPlantTF",
+    "description": "MegaPlantTF is a machine learning framework and web server for plant transcription factor identification. It matters because plant bioinformatics tools can support Moroccan research capacity in genomics and agriculture-related life sciences.",
+    "url": [
+      "https://github.com/Bioinformatics-UM6P/MegaPlantTF"
+    ],
+    "platform": [
+      "github"
+    ],
+    "type": [
+      "service",
+      "framework",
+      "web-app"
+    ],
+    "domain": [
+      "health-bio-life-sciences"
+    ],
+    "tags": [
+      "bioinformatics",
+      "genomics",
+      "protein-classification",
+      "webserver"
+    ],
+    "affiliations": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "sub_affiliations": [
+      "College of Computing",
+      "Bioinformatics Laboratory"
+    ],
+    "language": [
+      "Python"
+    ],
+    "license": "MIT",
+    "doi": null,
+    "maturity": "research",
+    "status": "active",
+    "created_at": "2024-12-15"
+  },
+  {
+    "name": "GeneLM",
+    "description": "GeneLM is a genomic language model for bacterial coding sequence prediction and TIS refinement. It matters because it expands Moroccan bioinformatics work in modern AI methods for genomics.",
+    "url": [
+      "https://github.com/Bioinformatics-UM6P/GeneLM"
+    ],
+    "platform": [
+      "github"
+    ],
+    "type": [
+      "model"
+    ],
+    "domain": [
+      "health-bio-life-sciences"
+    ],
+    "tags": [
+      "genomics",
+      "bacteria",
+      "language-model",
+      "transformer"
+    ],
+    "affiliations": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "sub_affiliations": [
+      "College of Computing",
+      "Bioinformatics Laboratory"
+    ],
+    "language": [
+      "Python"
+    ],
+    "license": "CC-BY-4.0",
+    "doi": "10.1093/bib/bbaf311",
+    "maturity": "research",
+    "status": "active",
+    "created_at": "2025-03-02"
+  }
+]

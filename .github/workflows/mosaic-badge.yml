@@ -1,0 +1,29 @@
+name: Update MOSAIC Badge
+
+on:
+  push:
+    paths:
+      - catalog/mosaic.json
+  workflow_dispatch:
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update mosaic count badge
+        run: python scripts/update_mosaic_badge.py
+
+      - name: Commit updated badge
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update MOSAIC badge"
+          file_pattern: "catalog/mosaic-badge.json"

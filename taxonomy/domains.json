@@ -1,0 +1,62 @@
+[
+  {
+    "id": "agriculture-food",
+    "name": "Agriculture & Food",
+    "description": "Agriculture, crop science, food systems, and farm decision support."
+  },
+  {
+    "id": "climate-environment-water",
+    "name": "Climate, Environment & Water",
+    "description": "Climate, weather, hydrology, environment, and sustainability."
+  },
+  {
+    "id": "health-bio-life-sciences",
+    "name": "Health, Bio & Life Sciences",
+    "description": "Health, bioinformatics, genomics, and life-science AI."
+  },
+  {
+    "id": "education-learning",
+    "name": "Education & Learning",
+    "description": "Education, learning tools, and teaching platforms."
+  },
+  {
+    "id": "finance-risk",
+    "name": "Finance & Risk",
+    "description": "Finance, compliance, fraud, risk, and decision support."
+  },
+  {
+    "id": "industry-energy-mining",
+    "name": "Industry, Energy & Mining",
+    "description": "Industrial AI, manufacturing, energy systems, mining, and operations."
+  },
+  {
+    "id": "public-sector-governance",
+    "name": "Public Sector & Governance",
+    "description": "Government, policy, public services, and civic technology."
+  },
+  {
+    "id": "language-culture-heritage",
+    "name": "Language, Culture & Heritage",
+    "description": "Language technologies, local languages, cultural data, and heritage."
+  },
+  {
+    "id": "mobility-logistics-geospatial",
+    "name": "Mobility, Logistics & Geospatial",
+    "description": "Mobility, logistics, mapping, GIS, and remote sensing."
+  },
+  {
+    "id": "cybersecurity-privacy-trust",
+    "name": "Cybersecurity, Privacy & Trust",
+    "description": "Security, privacy, safety, trust, and responsible AI."
+  },
+  {
+    "id": "research-infrastructure-tools",
+    "name": "Research Infrastructure & Tools",
+    "description": "Research tooling, scientific workflows, experiment support, and infrastructure."
+  },
+  {
+    "id": "general-purpose-ai",
+    "name": "General-Purpose AI",
+    "description": "General AI tools, reusable infrastructure, and multi-domain resources."
+  }
+]

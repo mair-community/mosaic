@@ -1,0 +1,154 @@
+name: Submit project
+description: Propose a new project for MOSAIC
+title: "[Submit]: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to MOSAIC.
+
+        If a needed domain, type, platform, or status is missing, you can mention it here or propose it in a pull request by editing the relevant file in `taxonomy/`.
+
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: Example Project
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One sentence on what it does. One sentence on why it matters.
+      placeholder: Example Project is a Python library for .... It matters because ....
+    validations:
+      required: true
+
+  - type: textarea
+    id: url
+    attributes:
+      label: Public URLs
+      description: One URL per line
+      placeholder: |
+        https://github.com/org/repo
+        https://huggingface.co/org/model
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform values
+      description: Comma-separated values from taxonomy/platform.json
+      placeholder: github, huggingface
+    validations:
+      required: true
+
+  - type: input
+    id: type
+    attributes:
+      label: Type values
+      description: Comma-separated values from taxonomy/types.json
+      placeholder: library, toolkit
+    validations:
+      required: true
+
+  - type: input
+    id: domain
+    attributes:
+      label: Domain values
+      description: Comma-separated values from taxonomy/domains.json
+      placeholder: language-culture-heritage
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated keywords
+      placeholder: darija, nlp, open-source
+    validations:
+      required: true
+
+  - type: input
+    id: affiliations
+    attributes:
+      label: Affiliations
+      description: Comma-separated organizations
+      placeholder: Mohammed VI Polytechnic University, MAIR
+    validations:
+      required: true
+
+  - type: input
+    id: sub_affiliations
+    attributes:
+      label: Sub-affiliations
+      description: Comma-separated labs, centers, departments, or units
+      placeholder: College of Computing, Bioinformatics Laboratory
+    validations:
+      required: false
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Comma-separated programming languages
+      placeholder: Python, TypeScript
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: MIT
+    validations:
+      required: false
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      placeholder: 10.1234/example
+    validations:
+      required: false
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - active
+        - experimental
+        - maintenance
+        - inactive
+        - archived
+    validations:
+      required: true
+
+  - type: input
+    id: created_at
+    attributes:
+      label: Created at
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: textarea
+    id: morocco_connection
+    attributes:
+      label: Moroccan connection
+      description: Briefly explain the Moroccan link
+      placeholder: Built by Moroccan researchers and used in Moroccan NLP research.
+    validations:
+      required: true
+
+  - type: textarea
+    id: missing_taxonomy
+    attributes:
+      label: Missing taxonomy value, if any
+      description: Mention any missing platform, domain, type, or status value you think should be added.

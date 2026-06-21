@@ -1,0 +1,40 @@
+name: Report update
+description: Report a broken link or suggest a metadata correction
+title: "[Update]: "
+labels: ["update"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: Example Project
+    validations:
+      required: true
+
+  - type: dropdown
+    id: update_type
+    attributes:
+      label: Update type
+      options:
+        - broken link
+        - metadata correction
+        - taxonomy correction
+        - duplicate entry
+        - archive request
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_issue
+    attributes:
+      label: What needs to be fixed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed change
+    validations:
+      required: true

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "github",
+    "name": "GitHub"
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab"
+  },
+  {
+    "id": "bitbucket",
+    "name": "Bitbucket"
+  },
+  {
+    "id": "codeberg",
+    "name": "Codeberg"
+  },
+  {
+    "id": "sourcehut",
+    "name": "SourceHut"
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face"
+  },
+  {
+    "id": "zenodo",
+    "name": "Zenodo"
+  },
+  {
+    "id": "pypi",
+    "name": "PyPI"
+  },
+  {
+    "id": "npm",
+    "name": "npm"
+  },
+  {
+    "id": "crates",
+    "name": "crates.io"
+  },
+  {
+    "id": "dockerhub",
+    "name": "Docker Hub"
+  },
+  {
+    "id": "quay",
+    "name": "Quay"
+  },
+  {
+    "id": "kaggle",
+    "name": "Kaggle"
+  },
+  {
+    "id": "colab",
+    "name": "Google Colab"
+  },
+  {
+    "id": "streamlit",
+    "name": "Streamlit"
+  },
+  {
+    "id": "gradio",
+    "name": "Gradio"
+  },
+  {
+    "id": "website",
+    "name": "Website"
+  },
+  {
+    "id": "other",
+    "name": "Other"
+  }
+]
