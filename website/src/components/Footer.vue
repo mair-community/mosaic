@@ -37,7 +37,7 @@
               </a>
             </li>
             <li>
-              <a href="https://discord.gg/g5YQH3U8Uf" target="_blank" rel="noopener noreferrer"
+              <a href="https://discord.gg/ZtNuKJ7V2H" target="_blank" rel="noopener noreferrer"
                  class="text-sm hover:text-primary-400 transition-colors duration-200 flex items-center space-x-2">
                 <span>Join our Discord</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

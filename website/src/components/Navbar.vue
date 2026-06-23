@@ -46,7 +46,7 @@
               </svg>
             </a>
             <a
-              href="https://discord.gg/g5YQH3U8Uf"
+              href="https://discord.gg/ZtNuKJ7V2H"
               target="_blank"
               rel="noopener noreferrer"
               class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-primary-700 transition-colors duration-200"
@@ -108,7 +108,7 @@
               <span class="text-sm font-medium">LinkedIn</span>
             </a>
             <a
-              href="https://discord.gg/g5YQH3U8Uf"
+              href="https://discord.gg/ZtNuKJ7V2H"
               target="_blank"
               rel="noopener noreferrer"
               class="flex-1 flex items-center justify-center space-x-2 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200"

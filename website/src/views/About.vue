@@ -97,7 +97,7 @@
               <div>
                 <h3 class="font-semibold text-gray-900 mb-1">Join the community</h3>
                 <p class="text-gray-600 text-sm">Discuss the catalog, propose new categories, and help with reviews on Discord.</p>
-                <a href="https://discord.gg/g5YQH3U8Uf" target="_blank" rel="noopener noreferrer" class="text-primary-700 hover:text-primary-800 text-sm font-medium mt-2 inline-block">Join Discord →</a>
+                <a href="https://discord.gg/ZtNuKJ7V2H" target="_blank" rel="noopener noreferrer" class="text-primary-700 hover:text-primary-800 text-sm font-medium mt-2 inline-block">Join Discord →</a>
               </div>
             </div>
           </div>
