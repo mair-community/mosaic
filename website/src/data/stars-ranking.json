@@ -18,7 +18,7 @@
       "language-model",
       "transformer"
     ],
-    "lastUpdated": "2026-06-23T22:31:29.500Z"
+    "lastUpdated": "2026-06-23T23:17:50.404Z"
   },
   {
     "name": "MegaPlantTF",
@@ -39,7 +39,7 @@
       "protein-classification",
       "webserver"
     ],
-    "lastUpdated": "2026-06-23T22:31:29.162Z"
+    "lastUpdated": "2026-06-23T23:17:50.067Z"
   },
   {
     "name": "ClimateFiller",
@@ -60,6 +60,6 @@
       "time-series",
       "machine-learning"
     ],
-    "lastUpdated": "2026-06-23T22:31:28.782Z"
+    "lastUpdated": "2026-06-23T23:17:49.705Z"
   }
 ]

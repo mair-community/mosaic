@@ -1,4 +1,4 @@
-name = "mosaic-website"
+name = "mosaic"
 compatibility_date = "2026-06-24"
 
 # Serve the Vite build output (dist/) as a static-asset Worker.
