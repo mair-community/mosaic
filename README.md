@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Website-mosaic.mair.com-980100" alt="MOSAIC Website">
   </a>
   <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/mair/mosaic/main/catalog/mosaic-badge.json&cacheSeconds=300" alt="MOSAIC Badge">
-  <a href="https://discord.gg/g5YQH3U8Uf">
+  <a href="https://discord.gg/ZtNuKJ7V2H">
     <img src="https://img.shields.io/badge/Discord-Community-5865F2?logo=discord&logoColor=white" alt="Discord: Join the server">
   </a>
   <a href="CONTRIBUTING.md">
