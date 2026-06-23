@@ -1,0 +1,65 @@
+[
+  {
+    "name": "GeneLM",
+    "url": "https://github.com/Bioinformatics-UM6P/GeneLM",
+    "description": "GeneLM is a genomic language model for bacterial coding sequence prediction and TIS refinement. It matters because it expands Moroccan bioinformatics work in modern AI methods for genomics.",
+    "domain": "Health, Bio & Life Sciences",
+    "platform": "github",
+    "type": "Model",
+    "status": "active",
+    "stars": 14,
+    "forks": 2,
+    "watchers": 14,
+    "language": "Jupyter Notebook",
+    "license": "CC-BY-4.0",
+    "tags": [
+      "genomics",
+      "bacteria",
+      "language-model",
+      "transformer"
+    ],
+    "lastUpdated": "2026-06-23T22:31:29.500Z"
+  },
+  {
+    "name": "MegaPlantTF",
+    "url": "https://github.com/Bioinformatics-UM6P/MegaPlantTF",
+    "description": "MegaPlantTF is a machine learning framework and web server for plant transcription factor identification. It matters because plant bioinformatics tools can support Moroccan research capacity in genomics and agriculture-related life sciences.",
+    "domain": "Health, Bio & Life Sciences",
+    "platform": "github",
+    "type": "Service",
+    "status": "active",
+    "stars": 8,
+    "forks": 1,
+    "watchers": 8,
+    "language": "Jupyter Notebook",
+    "license": "MIT",
+    "tags": [
+      "bioinformatics",
+      "genomics",
+      "protein-classification",
+      "webserver"
+    ],
+    "lastUpdated": "2026-06-23T22:31:29.162Z"
+  },
+  {
+    "name": "ClimateFiller",
+    "url": "https://github.com/elhachimi-ch/climatefiller",
+    "description": "ClimateFiller is a Python framework for climate time-series quality control and gap filling. It matters because reliable climate data pipelines are important for Moroccan and African environmental analytics.",
+    "domain": "Climate, Environment & Water",
+    "platform": "github",
+    "type": "Library",
+    "status": "active",
+    "stars": 6,
+    "forks": 4,
+    "watchers": 6,
+    "language": "Python",
+    "license": "MIT",
+    "tags": [
+      "climate-data",
+      "gap-filling",
+      "time-series",
+      "machine-learning"
+    ],
+    "lastUpdated": "2026-06-23T22:31:28.782Z"
+  }
+]

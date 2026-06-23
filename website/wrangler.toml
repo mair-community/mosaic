@@ -1,0 +1,14 @@
+# Cloudflare Pages Configuration
+name = "mosaic-website"
+compatibility_date = "2024-01-01"
+
+# Pages-specific settings
+pages_build_output_dir = "dist"
+
+# Environment variables (set these in Cloudflare Dashboard)
+# GITHUB_TOKEN - Your GitHub personal access token for API calls
+# CF_PAGES_WEBHOOK_URL - Webhook URL to trigger rebuilds (from Pages settings)
+
+[vars]
+# Non-sensitive variables can be defined here
+NODE_VERSION = "20"
