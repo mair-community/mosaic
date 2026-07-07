@@ -88,6 +88,13 @@ async function syncStarsRanking() {
     starData.sort((a, b) => b.stars - a.stars);
     const totalStars = starData.reduce((sum, p) => sum + p.stars, 0);
 
+    // Resilience: if every fetch failed (e.g. GitHub rate-limited the build with
+    // no GITHUB_TOKEN), keep the last committed ranking instead of wiping it.
+    if (starData.length === 0 && githubProjects.length > 0) {
+      console.warn('⚠ No stars fetched (likely a GitHub rate limit). Keeping the existing stars-ranking.json.');
+      return;
+    }
+
     writeFileSync(OUTPUT_PATH, JSON.stringify(starData, null, 2) + '\n');
     console.log(`✓ Wrote ${successCount} projects, total stars: ${totalStars}`);
   } catch (error) {

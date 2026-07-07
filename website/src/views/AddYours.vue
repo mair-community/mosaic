@@ -272,9 +272,10 @@
 
           <!-- Submit Button -->
           <div class="pt-4">
-            <button type="submit" class="btn-primary w-full py-3 text-lg">
-              Submit Project
+            <button type="submit" :disabled="submitting" class="btn-primary w-full py-3 text-lg disabled:opacity-60 disabled:cursor-not-allowed">
+              {{ submitting ? 'Submitting...' : 'Submit Project' }}
             </button>
+            <p v-if="submitError" class="mt-3 text-sm text-red-600 text-center">{{ submitError }}</p>
           </div>
         </form>
       </div>
@@ -305,6 +306,13 @@
 import { ref } from 'vue'
 
 const submitted = ref(false)
+const submitting = ref(false)
+const submitError = ref('')
+
+// Free email delivery via Web3Forms (https://web3forms.com).
+// Get an access key (enter your email, they email you one), then set it as a
+// Cloudflare build variable named VITE_WEB3FORMS_ACCESS_KEY, or paste it below.
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'af33691a-2b85-4d81-8376-9a04248e7daa'
 
 const domains = [
   'Agriculture & Food Systems',
@@ -339,46 +347,82 @@ const form = ref({
   email: ''
 })
 
-const handleSubmit = () => {
-  // Process tags
+const handleSubmit = async () => {
+  submitError.value = ''
+
   const tags = form.value.tagsInput
     .split(',')
     .map(t => t.trim())
     .filter(t => t.length > 0)
 
-  // Process units
   const units = form.value.unit
     .split(',')
     .map(u => u.trim())
     .filter(u => u.length > 0)
 
-  // Create project object
-  const project = {
+  // A ready-to-paste catalog/mosaic.json entry, included in the email.
+  const mosaicEntry = {
     name: form.value.name,
     description: form.value.description,
-    url: form.value.url,
-    platform: form.value.platform,
-    type: form.value.type,
-    domain: form.value.domain,
-    tags: tags,
-    owner: form.value.owner,
-    unit: units.length === 1 ? units[0] : units,
-    language: form.value.language,
-    license: form.value.license,
+    url: form.value.url ? [form.value.url] : [],
+    platform: form.value.platform ? [form.value.platform] : [],
+    type: form.value.type ? [form.value.type] : [],
+    domain: form.value.domain ? [form.value.domain] : [],
+    tags,
+    affiliations: units,
+    sub_affiliations: [],
+    language: form.value.language ? [form.value.language] : [],
+    license: form.value.license || null,
     doi: form.value.doi || null,
-    status: form.value.status,
-    created_at: form.value.created_at
+    status: form.value.status || 'active',
+    created_at: form.value.created_at || null,
   }
 
-  // Log to console (in production, this would send to backend)
-  console.log('Project Submission:', project)
-  console.log('Contact Email:', form.value.email)
+  if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+    submitError.value = 'Submissions are not configured yet. Set a Web3Forms access key to enable email delivery.'
+    return
+  }
 
-  // Show success message
-  submitted.value = true
-
-  // Scroll to top
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  submitting.value = true
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `MOSAIC submission: ${form.value.name || 'Untitled project'}`,
+        from_name: 'MOSAIC Website',
+        replyto: form.value.email,
+        Project: form.value.name,
+        Description: form.value.description,
+        URL: form.value.url,
+        Platform: form.value.platform,
+        Type: form.value.type,
+        Domain: form.value.domain,
+        Tags: tags.join(', '),
+        Owner: form.value.owner,
+        Affiliation: form.value.unit,
+        Language: form.value.language,
+        License: form.value.license,
+        DOI: form.value.doi || '',
+        Status: form.value.status,
+        Created: form.value.created_at,
+        Contact_email: form.value.email,
+        mosaic_json_entry: JSON.stringify(mosaicEntry, null, 2),
+      }),
+    })
+    const data = await res.json()
+    if (data.success) {
+      submitted.value = true
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else {
+      submitError.value = data.message || 'Something went wrong sending your submission. Please try again.'
+    }
+  } catch (e) {
+    submitError.value = 'Network error. Please check your connection and try again.'
+  } finally {
+    submitting.value = false
+  }
 }
 
 const resetForm = () => {
