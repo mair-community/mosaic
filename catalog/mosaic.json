@@ -1,148 +1,322 @@
 [
   {
     "name": "ClimateFiller",
-    "description": "ClimateFiller is a Python framework for climate time-series quality control and gap filling. It matters because reliable climate data pipelines are important for Moroccan and African environmental analytics.",
-    "url": [
-      "https://github.com/elhachimi-ch/climatefiller"
-    ],
-    "platform": [
-      "github"
-    ],
-    "type": [
-      "library",
-      "framework"
-    ],
-    "domain": [
-      "climate-environment-water"
-    ],
-    "tags": [
-      "climate-data",
-      "gap-filling",
-      "time-series",
-      "machine-learning"
-    ],
-    "affiliations": [
-      "Mohammed VI Polytechnic University"
-    ],
-    "sub_affiliations": [
-      "Center for Remote Sensing Applications",
-      "International Water Research Institute"
-    ],
-    "language": [
-      "Python"
-    ],
+    "description": "ClimateFiller is a Python framework for climate time-series quality control, outlier detection, bias correction, and gap filling using data-driven and machine learning methods.",
+    "url": ["https://github.com/elhachimi-ch/climatefiller"],
+    "platform": ["github"],
+    "type": ["library", "framework"],
+    "domain": ["climate-environment-water"],
+    "tags": ["climate-data", "gap-filling", "time-series", "machine-learning", "quality-control"],
+    "affiliations": ["Mohammed VI Polytechnic University"],
+    "sub_affiliations": ["Center for Remote Sensing Applications", "International Water Research Institute"],
+    "language": ["Python"],
     "license": "MIT",
     "doi": "10.1016/j.simpa.2023.100575",
     "status": "active",
     "created_at": "2023-09-09"
   },
   {
+    "name": "Atlaset",
+    "description": "Atlaset is a curated Moroccan Darija text dataset for language modeling, text generation, word embeddings, and other Moroccan Arabic NLP tasks.",
+    "url": ["https://huggingface.co/datasets/atlasia/Atlaset"],
+    "platform": ["huggingface"],
+    "type": ["dataset"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "dataset", "language-modeling", "text-generation", "low-resource-nlp"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": [],
+    "license": null,
+    "doi": null,
+    "status": "active",
+    "created_at": "2025-03-06"
+  },
+  {
     "name": "Atlas-Chat",
-    "description": "Atlas-Chat is a family of large language models adapted for Moroccan Arabic Darija. It matters because open local-language models improve representation and access for Moroccan users and researchers.",
-    "url": [
-      "https://huggingface.co/MBZUAI-Paris/Atlas-Chat-9B"
-    ],
-    "platform": [
-      "huggingface"
-    ],
-    "type": [
-      "model"
-    ],
-    "domain": [
-      "language-culture-heritage"
-    ],
-    "tags": [
-      "darija",
-      "moroccan-arabic",
-      "llm",
-      "instruction-tuning"
-    ],
-    "affiliations": [
-      "Mohammed VI Polytechnic University"
-    ],
-    "sub_affiliations": [
-      "School of Industrial Management"
-    ],
-    "language": [
-      "Python"
-    ],
+    "description": "Atlas-Chat is a family of large language models adapted for Moroccan Arabic Darija through instruction tuning and curated dialectal resources.",
+    "url": ["https://huggingface.co/MBZUAI-Paris/Atlas-Chat-9B"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "llm", "language-model", "instruction-tuning", "low-resource-nlp"],
+    "affiliations": ["Mohammed VI Polytechnic University", "AtlasIA"],
+    "sub_affiliations": ["School of Industrial Management"],
+    "language": ["Python"],
     "license": null,
     "doi": "10.48550/arXiv.2409.17912",
     "status": "active",
     "created_at": "2024-09-13"
   },
   {
-    "name": "MegaPlantTF",
-    "description": "MegaPlantTF is a machine learning framework and web server for plant transcription factor identification. It matters because plant bioinformatics tools can support Moroccan research capacity in genomics and agriculture-related life sciences.",
-    "url": [
-      "https://github.com/Bioinformatics-UM6P/MegaPlantTF"
-    ],
-    "platform": [
-      "github"
-    ],
-    "type": [
-      "service",
-      "framework",
-      "web-app"
-    ],
-    "domain": [
-      "health-bio-life-sciences"
-    ],
-    "tags": [
-      "bioinformatics",
-      "genomics",
-      "protein-classification",
-      "webserver"
-    ],
-    "affiliations": [
-      "Mohammed VI Polytechnic University"
-    ],
-    "sub_affiliations": [
-      "College of Computing",
-      "Bioinformatics Laboratory"
-    ],
-    "language": [
-      "Python"
-    ],
-    "license": "MIT",
+    "name": "MoulSot",
+    "description": "MoulSot is an automatic speech recognition model for Moroccan Darija, designed for real-world speech and code-switching between Darija, French, English, and Arabic.",
+    "url": ["https://huggingface.co/atlasia/moulsot.v0.3"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "automatic-speech-recognition", "speech-to-text", "code-switching", "voice-ai"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": "Apache-2.0",
     "doi": null,
+    "status": "active",
+    "created_at": "2026-05-05"
+  },
+  {
+    "name": "Al-Atlas",
+    "description": "Al-Atlas is a Moroccan Darija causal language model fine-tuned from Qwen2.5 on curated Moroccan Darija text. It matters because compact open models can support local chatbots, content generation, classification, and education tools in Darija.",
+    "url": ["https://huggingface.co/atlasia/Al-Atlas-0.5B"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "llm", "causal-language-model", "qwen", "text-generation"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": null,
+    "doi": null,
+    "status": "active",
+    "created_at": "2025-03-06"
+  },
+  {
+    "name": "XLM-RoBERTa-Morocco",
+    "description": "XLM-RoBERTa-Morocco is a masked language model fine-tuned for Moroccan Darija using the Atlaset dataset.",
+    "url": ["https://huggingface.co/atlasia/XLM-RoBERTa-Morocco"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "masked-language-model", "xlm-roberta", "encoder-model", "low-resource-nlp"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": null,
+    "doi": null,
+    "status": "active",
+    "created_at": "2025-03-06"
+  },
+  {
+    "name": "Terjman",
+    "description": "Terjman is a family of transformer-based English-to-Moroccan-Darija translation models released in multiple sizes.",
+    "url": ["https://huggingface.co/atlasia/Terjman-Nano-v2.0", "https://huggingface.co/atlasia/Terjman-Large-v2.0", "https://huggingface.co/atlasia/Terjman-Ultra-v2.0", "https://huggingface.co/atlasia/Terjman-Supreme-v2.0"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "translation", "english-to-darija", "seq2seq", "transformer"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": "CC-BY-NC-4.0",
+    "doi": null,
+    "status": "active",
+    "created_at": "2025-03-11"
+  },
+  {
+    "name": "Transliteration-Moroccan-Darija",
+    "description": "Transliteration-Moroccan-Darija is a transformer model that converts Moroccan Darija written in Arabizi Latin script into Arabic script.",
+    "url": ["https://huggingface.co/atlasia/Transliteration-Moroccan-Darija"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "arabizi", "transliteration", "text-normalization", "seq2seq"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": null,
+    "doi": null,
+    "status": "active",
+    "created_at": "2024-04-30"
+  },
+  {
+    "name": "DarijaLID",
+    "description": "DarijaLID is a FastText language identification model for distinguishing Moroccan Darija from other Arabic dialects.",
+    "url": ["https://huggingface.co/atlasia/DarijaLID"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "language-identification", "dialect-identification", "fasttext", "data-filtering"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": "Apache-2.0",
+    "doi": null,
+    "status": "active",
+    "created_at": "2025-05-09"
+  },
+  {
+    "name": "Morocco-Darija-Word-Embedding",
+    "description": "Morocco-Darija-Word-Embedding provides FastText word embeddings trained on Moroccan Darija text.",
+    "url": ["https://huggingface.co/atlasia/Morocco-Darija-Word-Embedding"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "word-embeddings", "fasttext", "feature-extraction", "low-resource-nlp"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": null,
+    "doi": null,
+    "status": "active",
+    "created_at": "2025-02-02"
+  },
+  {
+    "name": "Sfaya",
+    "description": "Sfaya is a set of Arabic and Moroccan-Darija text classification models released by AtlasIA for dialect and text filtering workflows.",
+    "url": ["https://huggingface.co/atlasia/Sfaya-BBACda-W", "https://huggingface.co/atlasia/Sfaya-W-Ary-Arz-MSA"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "text-classification", "dialect-classification", "data-filtering", "bert"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": "Apache-2.0",
+    "doi": null,
+    "status": "active",
+    "created_at": "2024-12-14"
+  },
+  {
+    "name": "AtlasOCR",
+    "description": "AtlasOCR is an open-source OCR model for Darija and Arabic-script Moroccan content, built by fine-tuning a Qwen2.5-VL vision-language model with synthetic and real-world Darija text images.",
+    "url": ["https://huggingface.co/atlasia/AtlasOCR"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "ocr", "vision-language-model", "qwen2-vl", "qlora", "document-ai"],
+    "affiliations": ["AtlasIA"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": null,
+    "doi": "10.48550/arXiv.2604.08070",
+    "status": "active",
+    "created_at": "2025-09-16"
+  },
+  {
+    "name": "PlantDeBERTa",
+    "description": "PlantDeBERTa is a DeBERTa-based transformer language model for named entity recognition in plant stress-response literature.",
+    "url": ["https://huggingface.co/PHENOMA/PlantDeBERTa"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["health-bio-life-sciences"],
+    "tags": ["plant-science", "ner", "language-model", "deberta", "crop-stress", "agricultural-nlp"],
+    "affiliations": ["Mohammed VI Polytechnic University", "Sidi Mohamed Ben Abdellah University", "Cadi Ayyad University"],
+    "sub_affiliations": ["PHENO-MA", "College of Agriculture and Environmental Sciences"],
+    "language": ["Python"],
+    "license": "MIT",
+    "doi": "10.48550/arXiv.2506.08897",
+    "status": "active",
+    "created_at": "2025-06-24"
+  },
+  {
+    "name": "MegaPlantTF",
+    "description": "MegaPlantTF is a machine learning and deep learning framework and web server for identifying and classifying plant transcription factors.",
+    "url": ["https://github.com/Bioinformatics-UM6P/MegaPlantTF"],
+    "platform": ["github"],
+    "type": ["service", "framework", "web-app"],
+    "domain": ["health-bio-life-sciences"],
+    "tags": ["bioinformatics", "plant-transcription-factors", "genomics", "protein-classification", "machine-learning", "deep-learning"],
+    "affiliations": ["Mohammed VI Polytechnic University"],
+    "sub_affiliations": ["College of Computing", "Bioinformatics Laboratory"],
+    "language": ["Python"],
+    "license": "MIT",
+    "doi": "10.1093/bioinformatics/btaf678",
     "status": "active",
     "created_at": "2024-12-15"
   },
   {
     "name": "GeneLM",
-    "description": "GeneLM is a genomic language model for bacterial coding sequence prediction and TIS refinement. It matters because it expands Moroccan bioinformatics work in modern AI methods for genomics.",
-    "url": [
-      "https://github.com/Bioinformatics-UM6P/GeneLM"
-    ],
-    "platform": [
-      "github"
-    ],
-    "type": [
-      "model"
-    ],
-    "domain": [
-      "health-bio-life-sciences"
-    ],
-    "tags": [
-      "genomics",
-      "bacteria",
-      "language-model",
-      "transformer"
-    ],
-    "affiliations": [
-      "Mohammed VI Polytechnic University"
-    ],
-    "sub_affiliations": [
-      "College of Computing",
-      "Bioinformatics Laboratory"
-    ],
-    "language": [
-      "Python"
-    ],
+    "description": "GeneLM is a genomic language model for bacterial coding sequence prediction and translation initiation site refinement.",
+    "url": ["https://github.com/Bioinformatics-UM6P/GeneLM"],
+    "platform": ["github"],
+    "type": ["model"],
+    "domain": ["health-bio-life-sciences"],
+    "tags": ["genomics", "bacteria", "language-model", "transformer", "cds-prediction", "tis-prediction"],
+    "affiliations": ["Mohammed VI Polytechnic University"],
+    "sub_affiliations": ["College of Computing", "Bioinformatics Laboratory"],
+    "language": ["Python", "Jupyter Notebook"],
     "license": "CC-BY-4.0",
     "doi": "10.1093/bib/bbaf311",
     "status": "active",
     "created_at": "2025-03-02"
+  },
+  {
+    "name": "MLOSSRF",
+    "description": "MLOSSRF is a companion codebase for machine learning-based optimization of site-specific NPK fertilizer recommendations using Moroccan cereal field-trial data.",
+    "url": ["https://github.com/Bioinformatics-UM6P/MLOSSRF"],
+    "platform": ["github"],
+    "type": ["workflow", "framework"],
+    "domain": ["agriculture-food"],
+    "tags": ["precision-agriculture", "fertilizer-recommendation", "npk", "machine-learning", "explainable-ai", "constrained-optimization"],
+    "affiliations": ["Mohammed VI Polytechnic University"],
+    "sub_affiliations": ["College of Computing", "Bioinformatics Laboratory"],
+    "language": ["Python", "Jupyter Notebook"],
+    "license": "Non-commercial research use only",
+    "doi": "10.1016/j.atech.2026.101823",
+    "status": "active",
+    "created_at": "2026-01-01"
+  },
+  {
+    "name": "turba-models",
+    "description": "turba-models is a Python package for loading pretrained soil fertility and fertilizer recommendation models for Morocco.",
+    "url": ["https://github.com/open-turba/turba-models"],
+    "platform": ["github"],
+    "type": ["library", "model"],
+    "domain": ["agriculture-food"],
+    "tags": ["fertilizer-recommendation", "npk", "soil-fertility", "morocco", "machine-learning", "pretrained-models"],
+    "affiliations": ["Turba Open Lab"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": "MIT",
+    "doi": "10.5281/zenodo.20044002",
+    "status": "active",
+    "created_at": "2026-05-03"
+  },
+  {
+    "name": "turba-data",
+    "description": "turba-data is a Python dataset package for site-specific soil fertility and fertilizer recommendation workflows across Morocco.",
+    "url": ["https://github.com/open-turba/turba-data"],
+    "platform": ["github"],
+    "type": ["dataset", "library"],
+    "domain": ["agriculture-food"],
+    "tags": ["fertilizer-recommendation", "npk", "soil-fertility", "morocco", "dataset", "site-specific-agriculture"],
+    "affiliations": ["Turba Open Lab"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": "MIT",
+    "doi": "10.5281/zenodo.20044002",
+    "status": "active",
+    "created_at": "2026-05-03"
+  },
+  {
+    "name": "Casablanca",
+    "description": "Casablanca is a multidialectal Arabic speech dataset and model resource that includes Moroccan Arabic alongside other Arabic dialects for automatic speech recognition research.",
+    "url": ["https://huggingface.co/datasets/UBC-NLP/Casablanca"],
+    "platform": ["huggingface"],
+    "type": ["dataset"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["moroccan-arabic", "arabic-speech", "automatic-speech-recognition", "dialectal-arabic", "code-switching", "speech-dataset"],
+    "affiliations": ["UBC Deep Learning and NLP Lab", "Mohammed VI Polytechnic University"],
+    "sub_affiliations": ["UBC-NLP"],
+    "language": [],
+    "license": "CC-BY-NC-ND-4.0",
+    "doi": "10.48550/arXiv.2410.04527",
+    "status": "active",
+    "created_at": "2024-10-06"
+  },
+  {
+    "name": "PALM",
+    "description": "PALM is a culturally inclusive Arabic instruction-tuning and evaluation dataset for large language models, covering all 22 Arab countries and multiple dialects.",
+    "url": ["https://github.com/UBC-NLP/palm", "https://huggingface.co/datasets/UBC-NLP/palm"],
+    "platform": ["github", "huggingface"],
+    "type": ["dataset", "benchmark"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["arabic-nlp", "llm", "instruction-tuning", "benchmark", "cultural-evaluation", "dialectal-arabic"],
+    "affiliations": ["UBC Deep Learning and NLP Lab", "Mohammed VI Polytechnic University"],
+    "sub_affiliations": ["UBC-NLP"],
+    "language": ["Python"],
+    "license": "CC-BY-NC-ND-4.0",
+    "doi": "10.18653/v1/2025.acl-long.1579",
+    "status": "active",
+    "created_at": "2025-02-28"
   }
 ]
