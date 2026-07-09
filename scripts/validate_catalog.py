@@ -15,21 +15,28 @@ CATALOG_PATH = ROOT / "catalog" / "mosaic.json"
 SCHEMA_PATH = ROOT / "catalog" / "schema.json"
 TAXONOMY_DIR = ROOT / "taxonomy"
 
+
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
+
 
 def taxonomy_ids(filename: str) -> set[str]:
     return {item["id"] for item in load_json(TAXONOMY_DIR / filename)}
 
+
 def validate_schema(data, schema) -> list[str]:
     if jsonschema is None:
         return ["jsonschema is not installed. Run: pip install jsonschema"]
+
     validator = jsonschema.Draft202012Validator(schema)
     errors = []
+
     for err in sorted(validator.iter_errors(data), key=lambda e: list(e.path)):
         location = " -> ".join(str(x) for x in err.path) or "<root>"
         errors.append(f"Schema error at {location}: {err.message}")
+
     return errors
+
 
 def validate_date(value: str) -> bool:
     try:
@@ -37,6 +44,21 @@ def validate_date(value: str) -> bool:
         return True
     except ValueError:
         return False
+
+
+def validate_url_platform_lengths(project: dict) -> str | None:
+    name = project["name"]
+    url_count = len(project["url"])
+    platform_count = len(project["platform"])
+
+    if platform_count in (1, url_count):
+        return None
+
+    return (
+        f"{name}: 'platform' must contain either 1 shared platform "
+        f"or match the number of URLs."
+    )
+
 
 def main() -> int:
     mosaic = load_json(CATALOG_PATH)
@@ -62,8 +84,9 @@ def main() -> int:
             errors.append(f"Duplicate project name: {name}")
         names.add(name)
 
-        if len(project["url"]) != len(project["platform"]):
-            errors.append(f"{name}: 'url' and 'platform' should usually have the same length.")
+        url_platform_error = validate_url_platform_lengths(project)
+        if url_platform_error:
+            errors.append(url_platform_error)
 
         for u in project["url"]:
             if u in urls:
@@ -74,6 +97,9 @@ def main() -> int:
             for value in project[field]:
                 if value not in allowed[field]:
                     errors.append(f"{name}: invalid {field} value '{value}'")
+
+        if project["status"] not in allowed["status"]:
+            errors.append(f"{name}: invalid status value '{project['status']}'")
 
         if not validate_date(project["created_at"]):
             errors.append(f"{name}: invalid created_at date '{project['created_at']}'")
@@ -86,6 +112,7 @@ def main() -> int:
 
     print(f"Validation successful: {len(mosaic)} project(s) checked.")
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
