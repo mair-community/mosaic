@@ -14,7 +14,7 @@
   "doi": null,
   "status": "active",
   "created_at": "2025-03-26"
-  }
+  },
   {
     "name": "ClimateFiller",
     "description": "ClimateFiller is a Python framework for climate time-series quality control, outlier detection, bias correction, and gap filling using data-driven and machine learning methods.",
