@@ -1,5 +1,21 @@
 [
   {
+  "name": "Whisper Large v3 Turbo Darija",
+  "description": "Whisper Large v3 Turbo Darija is a LoRA adapter of OpenAI's Whisper Large v3 Turbo fine-tuned for automatic speech recognition in Moroccan Darija.",
+  "url": ["https://huggingface.co/anaszil/whisper-large-v3-turbo-darija"],
+  "platform": ["huggingface"],
+  "type": ["model"],
+  "domain": ["language-culture-heritage"],
+  "tags": ["darija", "moroccan-arabic", "automatic-speech-recognition", "speech-to-text", "whisper", "lora"],
+  "affiliations": [],
+  "sub_affiliations": [],
+  "language": ["Python"],
+  "license": "MIT",
+  "doi": null,
+  "status": "active",
+  "created_at": "2025-03-26"
+  }
+  {
     "name": "ClimateFiller",
     "description": "ClimateFiller is a Python framework for climate time-series quality control, outlier detection, bias correction, and gap filling using data-driven and machine learning methods.",
     "url": ["https://github.com/elhachimi-ch/climatefiller"],
