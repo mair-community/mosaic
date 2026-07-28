@@ -1,5 +1,21 @@
 [
   {
+    "name": "Darija-to-SQL",
+    "description": "Darija-to-SQL is a language model trained to translate Moroccan Darija questions into executable SQL queries.",
+    "url": ["https://huggingface.co/salmane11/Darija-to-SQL"],
+    "platform": ["huggingface"],
+    "type": ["model"],
+    "domain": ["language-culture-heritage"],
+    "tags": ["darija", "moroccan-arabic", "text-to-sql", "code-generation", "database", "language-model"],
+    "affiliations": ["Independent"],
+    "sub_affiliations": [],
+    "language": ["Python"],
+    "license": null,
+    "doi": "10.1145/3787497",
+    "status": "active",
+    "created_at": "2026-01-30"
+  },
+  {
     "name": "GemMaroc Models",
     "description": "GemMaroc is a family of Darija-aligned language models based on Gemma and Qwen, developed with data-efficient fine-tuning while preserving general reasoning capabilities.",
     "url": ["https://huggingface.co/GemMaroc/GemMaroc-27b-it", "https://huggingface.co/GemMaroc/GemMaroc-4b-tulu", "https://huggingface.co/GemMaroc/Qwen2.5-7B-Instruct-darija"],
