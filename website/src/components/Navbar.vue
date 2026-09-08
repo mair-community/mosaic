@@ -6,9 +6,9 @@
         <div class="flex items-center">
           <router-link to="/" class="flex items-center space-x-2.5 group">
             <img
-              src="@/assets/images/logo.png"
-              alt="MOSAIC by MAIR"
-              class="h-7 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
+              src="@/assets/images/mosaic-logo.png"
+              alt="MOSAIC logo"
+              class="h-9 w-9 shrink-0 object-contain group-hover:scale-105 transition-transform duration-200"
             />
             <span class="h-6 w-px bg-gray-200"></span>
             <div>
